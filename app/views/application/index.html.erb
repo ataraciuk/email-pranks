@@ -1,0 +1,32 @@
+<h1>Send an email</h1>
+
+<form action="/send" method="post">
+	<%= token_tag(nil) %>
+	<table>
+		<tr>
+			<td>From:</td>
+			<td><input type="text" name="from"/></td>
+		</tr>
+		<tr>
+			<td>To:</td>
+			<td><input type="text" placeholder="Comma-separated emails" name="to"/></td>
+		</tr>
+		<tr>
+			<td>Cc:</td>
+			<td><input type="text" placeholder="Comma-separated emails" name="cc"/></td>
+		</tr>
+		<tr>
+			<td>Bcc:</td>
+			<td><input type="text" placeholder="Comma-separated emails" name="bcc"/></td>
+		</tr>
+		<tr>
+			<td>Subject:</td>
+			<td><input type="text" name="subject"/></td>
+		</tr>
+		<tr>
+			<td>Body:</td>
+			<td><textarea name="body"/></textarea></td>
+		</tr>
+	</table>
+	<input type="submit" value="Send!" />
+</form>

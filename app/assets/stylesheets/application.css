@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+input[type="text"], textarea {
+	width:300px;
+}
+textarea {
+	height: 100px;
+}
